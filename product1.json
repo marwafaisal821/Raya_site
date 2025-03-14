@@ -1,0 +1,103 @@
+[
+
+{
+    "id": "1",
+    "name": "smart watch screen",
+    "description": "Apple Watch Series 9 GPS Aluminium Case Smart Watch With Sport Band, 45 mm, Midnight Black - MR9A3QA/A",
+    "brand": "watchs",
+    "price": 21100,
+    "images": [
+        "/images/pro1.jpg"
+    ]
+},
+{
+    "id": "2",
+    "name": "I phone",
+    "description": "Samsung Galaxy A15 Dual SIM, 256GB, 8GB RAM, 4G LTE - Black",
+    "brand": "  phone",
+    "price": 8999,
+    "images": [
+        "/images/pro2.jpg"
+    ]
+},
+{
+    "id": "3",
+    "name": "smart tv screen",
+    "description": "Samsung 55 Inch 4K UHD Smart LED TV with Built In Receiver - UA55CU7000UXEG",
+    "brand": "Screen",
+    "price": 23444,
+    "images": [
+        "/images/pro3.jpg"
+    ]
+},
+{
+    "id": "4",
+    "name": "Kitchen staff",
+    "description": "Philips Essential XL Digital Air Fryer, 6.2 Liter, 2000 Watt, Black - HD9280/91 ( International Warranty )",
+    "brand": "  home tools",
+    "price": 7999,
+    "images": [
+        "/images/pro4.jpg"
+    ]
+},
+{
+    "id": "5",
+    "name": "Hair Drayer",
+    "description": "Philips Series 5000 Hair Dryer, 2100 Watt, White - BHD500",
+    "brand": "Beautyhair",
+    "price": 2999,
+    "images": [
+        "/images/pro5.jpg"
+    ]
+},
+{
+    "id": "6",
+    "name": "Headphone",
+    "description": "Apple AirPods Max Wireless Over Ear Headphone, Space grey - MGYL3AM/A( International Warranty )",
+    "brand": " sound",
+    "price": 33150,
+    "images": [
+        "/images/pro6.jpg"
+    ]
+},
+{
+    "id": "7",
+    "name": "washer",
+    "description": "Ocean Front Load Full Automatic Washing Machine, 6 kg, Silver - WFO 1061 WL S",
+    "brand": "wash",
+    "price": 12999,
+    "images": [
+        "/images/pro7.jpg"
+    ]
+},
+{
+    "id": "8",
+    "name": "Normar Tv Screen",
+    "description": "ASUS Q540VJ-I93050 Gaming Laptop, Intel Core i9-13900H Processor, 15.6 Inch 3K Display, 1 TB SSD, 16GB RAM DDR5, NVIDIA GeForce RTX 3050 6GB Graphics, WIN11 Home - Black",
+    "brand": "screen",
+    "price": 66400,
+    "images": [
+        "/images/pro8.jpg"
+    ]
+},
+{
+        "id": "9",
+        "name": "air conadtion",
+        "description": "Carrier Optimax Split Air Conditioner, Cooling Only, 3 HP - 53KHCT-24",
+        "brand": "Air",
+        "price": 48499 ,
+        "images": [
+            "/images/pro9.jpg"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Iron",
+        "description": "IDO Steam Iron, 2800 Watt, Blue - SI2800-BBK",
+        "brand": "Home",
+        "price": 1409,
+        "images": [
+            "/images/pro10.jpg"
+        ]
+    }
+]

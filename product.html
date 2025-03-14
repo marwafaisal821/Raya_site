@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productstyle.css">
+    <script src="https://kit.fontawesome.com/e476d0cdb3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="mSearch">
+            <a href="index.html"  >
+  
+                <img src="images/raya.jpg" alt="" style="width: 70px;" >
+              </a>
+             <input type="search" placeholder="Search Product" id="searchInput">
+           
+            <p style="color: aliceblue;">عربي <i class="fa-solid fa-globe"  style="color: aliceblue; font-size: x-large;"></i></p>
+          
+        
+         <a href="register.html" style="  text-decoration: none; "> <p style="color: aliceblue;">Login or Register </p></a>
+        
+            <i class="fa-solid fa-cart-shopping"  style="color: aliceblue; font-size: xx-large;" ></i>
+            <div class="cart-counter" id="cart-counter">0</div>
+        </div>
+           <div class="mlist">
+             <ul>
+                   <i class="fa-solid fa-fire " style="color: aliceblue; font-size: x-large;"></i>
+                   <li><a href="productss.html">End Of Year</a></li>
+                   <li><a href="productss.html">Mobiles & Tablets</a></li>
+                   <li><a href="productss.html">Televisions</a></li>
+                   <li><a href="productss.html">Large Appliances</a></li>
+                   <li><a href="productss.html">Small Appliances</a></li>
+                   <li><a href="productss.html">Kitchen Appliances</a></li>
+                   <li><a href="productss.html">Laptops & PCs</a></li>
+                   <li><a href="productss.html">Health & Beauty</a></li>
+                   <li><a href="productss.html">Electronics</a></li>
+                   <li><a href="productss.html">Installment</a></li>
+           </ul>
+        
+           </div>
+        
+        </header>
+
+
+
+
+    <h1>Product Details</h1>
+    <div id="product-details" style="margin-left: 100px;">
+        <img id="product-image" alt="Product Image" />
+        <h2 id="product-name"></h2>
+        <p id="product-description"></p>
+        <p><strong id="product-price"></strong></p>
+    </div>
+    
+
+
+    <div class="t-productinfo">
+   
+        <div>
+            <div class="t-name">
+                <p style="padding-right: 250px;" ></p>
+                <span style="padding-top: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25px" style="padding-left:12px;"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M307 34.8c-11.5 5.1-19 16.6-19 29.2l0 64-112 0C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96l96 0 0 64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25px" style="padding-left:12px;"
+                        viewBox="0 0 512 512"
+                        class="t-sharelovesvg"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                    </svg>
+                </span>
+            </div>
+            <div class="t-price">
+                <span style="padding: 15px; background-color: #5CA800; border-radius: .4rem; color: white;">10% off
+                    interest</span>
+            </div>
+            <div class="t-namee">
+                <span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        height="25px"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z" />
+                    </svg></span>
+                <span style="width: 250px;">
+                    Or Pay with Raya Installments starting from 1,344 EGP / 36 Months
+                </span>
+                <a href="#">More payment methods</a>
+            </div>
+            <div class="t-qun">
+                <label for="">select Quntity</label>
+                <button onclick="decreaseQuantity()" style="background-color: white;  border: none;">-</button>
+                <span id="quantity">1</span>
+                <button onclick="increaseQuantity()" style="background-color: white; border: none;">+</button>
+            </div>
+            <div class="t-cartandcompare">
+                <button class="t-cart" id="add-to-cart">Add To Cart</button>
+                <button class="t-compare">Add To Compare</button>
+            </div>
+            <div class="t-datati">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="t-deliver"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z" />
+                    </svg>
+                    Delivery Time Inside Cairo & Giza
+                    <p>1-3 Business Days</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="t-deliver"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z" />
+                    </svg>
+                    <span>Delivery Time Outside Cairo & Giza</span>
+                    <p>5-7 Business Days</p>
+                </div>
+            </div>
+            <div class="t-datati2">
+                <div class="t-in">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                        class="t-svg"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z" />
+                    </svg>
+                    <span class="t-datawar">Warranty</span>
+                    <p class="t-datawar2">1 Year Tradeline</p>
+                    <p class="t-datawar2">Warranty</p>
+                </div>
+                <div class="t-in2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                        class="t-svg"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z" />
+                    </svg>
+                    <span class="t-datawar">Secure </span>
+                    <p class="t-datawar2">Payment</p>
+                    <p class="t-datawar2">cash on deliver</p>
+                </div>
+                <div class="t-in2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                        class="t-svg"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z" />
+                    </svg>
+                    <span class="t-datawar">Return</span>
+                    <p class="t-datawar2">For 14</p>
+                    <p class="t-datawar2">Days</p>
+                </div>
+                <div class="t-in2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                        class="t-svg"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z" />
+                    </svg>
+                    <span class="t-datawar">Sold Byy</span>
+                    <p class="t-datawar2"><a href="#">XPRS</a></p>
+                    <p class="t-datawar2"><a href="#">XPRS</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="t-sectinfo">
+        <section>
+            <h2>Product Details</h2>
+            <div class="t-sectiondeatailsdiv">
+                <input type="checkbox" id="menu-toggle">
+                <div class="menu-wrapper">
+                    <input type="checkbox" id="menu1-toggle">
+                    <label for="menu1-toggle" class="menu-button">Product Description</label>
+                    <div class="menu">
+                        <ul>
+                            <li>Brand: Apple</li>
+                            <li>Included SIM Card: No</li>
+                            <li>Bluetooth Function: Yes</li>
+                            <li>Smart Watch Waterproof: Yes</li>
+                            <li>Display Type: Retina LTPO OLED</li>
+                            <li>Brand: Apple</li>
+                            <li>Included SIM Card: No</li>
+                            <li>Bluetooth Function: Yes</li>
+                            <li>Smart Watch Waterproof: Yes</li>
+                            <li>Display Type: Retina LTPO OLED</li>
+                            <li>Brand: Apple</li>
+                            <li>Included SIM Card: No</li>
+                            <li>Bluetooth Function: Yes</li>
+                            <li>Smart Watch Waterproof: Yes</li>
+                            <li>Display Type: Retina LTPO OLED</li>
+                            <li>Brand: Apple</li>
+                            <li>Included SIM Card: No</li>
+                            <li>Bluetooth Function: Yes</li>
+                            <li>Smart Watch Waterproof: Yes</li>
+                            <li>Display Type: Retina LTPO OLED</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="t-faselBetweenContainer"></div>
+                <div class="menu-wrapper">
+                    <input type="checkbox" id="menu2-toggle">
+                    <label for="menu2-toggle" class="menu-button">Product Specifications</label>
+                    <div class="menu">
+                        <ul>
+                            <li>Brand: Apple</li>
+                            <li>Included SIM Card: No</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="t-faselBetweenContainer"></div>
+                <div class="menu-wrapper">
+                    <input type="checkbox" id="menu3-toggle">
+                    <label for="menu3-toggle" class="menu-button">Return & Refund</label>
+                    <div class="menu">
+                        <ul>
+                            <li>Returns within 14 days</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <h2 class="t-smailer">Similar Products</h2>
+        <div class="carousel-container">
+            <button class="prev-btn tt-button">&lt;</button>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/dryer.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/headphone.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json//Img/iphone.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/iron.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/kitchen.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/smarttv.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/smarttv.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/smartwatch.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json//Img/tv.jpeg" class="t-immage"></a></div>
+                    <div class="carousel-item"><a href="#"><img src="/product json/Img/washer.jpeg" class="t-immage"></a></div>
+                </div>
+            </div>
+            <button class="next-btn tt-button">&gt;</button>
+        </div>
+        <h2 class="t-smailer">Ratings & Reviews</h2>
+        <div class="t-sectiondeatailsdivv">
+            <div class="range-container">
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" value="20" disabled>
+                    <span class="range-label">1/5</span>
+                </div>
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" value="40" disabled>
+                    <span class="range-label">2/5</span>
+                </div>
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" value="60" disabled>
+                    <span class="range-label">3/5</span>
+                </div>
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" value="80" disabled>
+                    <span class="range-label">4/5</span>
+                </div>
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" value="100" disabled>
+                    <span class="range-label">5/5</span>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+    <div class="f-container">
+        
+        <div class="f-footer">
+    
+            <div class="how-we-are "> 
+      
+                    
+    
+               <h1>ABOUT RAYA</h1>
+               <a   class="f-f"  href="#">who we are </a><br>
+               <a    class="f-f"href="#"> store locator</a><br>
+              
+               <a   class="f-f" href="#"> raya plus </a><br>
+            
+            </div>
+            <div class="f-custiomer-support ">
+    
+    
+                <h1>CUSTOMER SUPPORT</h1>
+                <a  class="f-f"  href="#">request track maintanance </a><br>
+               <a    class="f-f"  href="#">live chat</a><br>
+                  <a   class="f-f"  href="#">call 19111</a><br>
+              <a   class="f-f"    href="#">contact us</a><br>
+              
+    
+            </div>
+           <div class="more ">
+            <h1>MORE</h1>
+    
+            <a  class="f-f"  href="#">installment OFFERS </a><br>
+    
+    
+            <a  class="f-f"  href="#">terms&condition</a><br>
+         <a   class="f-f"  href="#">privacy policy</a><br>
+          
+           </div>
+      <div class="stay-know">
+        <h1>STAY IN THE KNOW</h1>
+        <h5>Subscribe to our newslette</h5>
+      </div>
+    
+      
+        </div>
+        <div class="f-contain" >
+    
+    
+            <div class="f-ic"> 
+                <i class="fa-brands fa-google-play"></i>  <span>google paly</span>
+                <i class="fa-brands fa-apple"></i> <span>app sore </span>
+        
+        
+            </div>
+            <div class="media">
+        
+        
+                <i class="fa-brands fa-instagram" style=" font-size: 35px;"></i>
+                <i class="fa-brands fa-facebook" style=" font-size: 35px;"></i>
+                <i class="fa-brands fa-linkedin-in" style=" font-size: 35px;"></i>
+                <i class="fa-brands fa-whatsapp" style=" font-size: 35px;"></i> <span id="visa"><i class="fa-brands fa-cc-visa"></i></span>
+                <h4 class="f-resreved" >2025-raya shop || All Rights Reserved </h4>
+                
+         
+        
+            </div>
+        </div>
+
+
+
+
+
+    <script src="/product.js"></script>
+</body>
+
+</html>

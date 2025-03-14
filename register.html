@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        header {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .navbar div {
+            display: flex;
+            align-items: center;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .navbar span {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .container {
+            margin: 100px;
+            display: flex;
+            width: 90%; 
+        }
+        .form-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+        }
+        .form-section h1 {
+            color: #160567;
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .form-section .ss {
+            margin-bottom: 30px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+            margin-left: 10px;
+
+        }
+        label {
+            position: absolute;
+            left: 15px;
+            top: -10px;
+            background-color: white; 
+            padding: 0 5px; 
+            color: #333;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: calc(100% - 40px);
+            padding: 15px 15px 15px 40px; 
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            background-color: #f9f9f9;
+            margin: 10px;
+        }
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .form-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+            
+        }
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-top: 30px; 
+            margin-bottom: 10px;
+            margin-left: 25px;
+            justify-content: space-between;
+        }
+
+        .gender-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .button-container {
+            text-align: center;
+            width: 40%;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            position: relative;
+        }
+        button:hover {
+            background-color: #ffffff;
+            color: #007bff;
+            border-color: #007bff;
+            border-width: 1.2px;
+        }
+        button:after {
+            content: '↗'; 
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #aaa;
+        }
+        .info-section {
+            clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+            height: 500px;
+            width: 35%;
+            background-color: #007bff;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-left: 70px;
+        }
+        .info-section p {
+            margin: 10px 0;
+        }
+        .info-section button {
+            background-color: #007bff;
+            color: white;
+            border-width: 2px;
+            border-color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            position: relative;
+        }
+        .info-section button:hover {
+            background-color: white;
+            color: #007bff;
+            border-color: #007bff;
+        }
+        .info-section button:after {
+            content: '↗'; 
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #aaa;
+        }
+        .note {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-top: 5px;
+        }
+        footer {
+            height: 40px;
+            color: rgb(1, 1, 2);
+            border-top: 1px solid #557cff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        pre {
+            font-size: 20px;
+        }
+        .form-group p{
+        margin-left:25px ;
+            left: 15px;
+            top: -10px;
+            background-color: white; 
+            padding: 0 5px; 
+            color: #333;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <i class="fas fa-shield-alt"></i>
+            <span><pre> Secure Checkout</pre></span>
+        </div>
+        <h1>RAYA</h1>
+        <div>
+            <i class="fas fa-globe"></i>
+            <span><pre> Language</pre></span>
+        </div>
+        <div>
+            <i class="fas fa-headset"></i>
+            <span><pre> Customer Support 19900</pre></span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="form-section">
+            <h1>Create Account</h1>
+            <div class="ss">Create an account for a quick checkout process</div>
+            <form>
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-calendar-alt"></i>
+                    <label for="dob">Date of Birth (Optional)</label>
+                    <input type="date" id="dob">
+                </div>
+                <div class="form-group">
+                    <div>
+                    <p>Gender (Optional)</p>
+                    </div>
+                    <div class="gender-group">
+                        <div>
+                            <input type="radio" name="gender" value="male" id="male"> Male
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" value="female" id="female"> Female
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-phone"></i>
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    <div class="note">We will send you a verification code to verify your number</div>      
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                    <div class="note">Minimum 8 characters, at least 1 letter, 1 number, and 1 special character</div>
+                </div>
+                <div class="button-container">
+                    <button  onclick="gotomypage()"  type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div class="info-section">
+            <h1>Already Have An Account?</h1>
+            <p>If you already have an account, please log in.</p>
+            <button onclick="location.href='login.html'" type="submit">Login to My Account</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Any personal information you provide will be handled according to our <a href="#" style="color: #2c47df; text-decoration: underline;">Privacy Policy</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="mypage.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

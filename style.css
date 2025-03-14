@@ -1,0 +1,348 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(10,78,238);
+    display: flex; 
+    flex-direction: column;
+
+
+}
+.mSearch{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+input{
+  width: 50%;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+.mlist {
+  list-style-type: none; 
+  display: flex; 
+  height: 50%;
+  margin-top: 40px;
+ 
+  
+}
+
+.mlist li {
+  display: inline-block; 
+  margin: 5px;
+
+}
+
+.mlist a {
+  text-decoration: none; 
+  color: #ffffff; 
+}
+.mlist a:hover{
+  font-weight: bold; 
+  text-decoration: underline;
+
+}
+
+
+.section1{
+    height: 600Px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mOneS1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+}
+
+.mTwoS1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+
+.mThreeS1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+}
+
+.mmimg{
+    margin-top: 50px;
+    border-radius: 10%;
+}
+
+
+
+.section2{
+    margin-top: 250PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.clickImg{
+    width: 130px;
+
+}
+
+figcaption {
+    text-align: center; 
+    font-size: 16px;
+    color: #0c015f; 
+    margin-top: 5px;
+    font-weight: bold;
+  }
+
+
+
+  .section3{
+    margin-top: 150PX;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(240,244,254);
+  }
+
+  .mpara{
+   margin-top: 50px;
+   margin-left: 100px;
+   color: rgb(10,30,102);
+    width: 35%;
+   
+  }
+
+  .mpoints{
+    margin-left: 100px;
+
+    width: 10%;
+  }
+
+
+
+
+
+  .section4{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+  }
+
+
+
+  .carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.product-card {
+  
+  width: 250px;
+  text-align: center;
+  background-color: #e2e7ec;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 50px;
+}
+.product-card img {
+  width: 90%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+
+ 
+  .offerB{
+    border-radius: 20PX;
+    height: 50px;
+    font-weight:600;
+    width: 200px;
+    color: blue;
+  }
+
+  .offerB:hover{
+    background-color: rgb(38, 56, 254);
+    color: azure;
+  }
+  .offerR{
+    border-radius: 20PX;
+    height: 50px;
+    width: 300px;
+    font-weight:600;
+    color: blue;
+  }
+
+  .offerR:hover{
+    background-color: rgb(38, 56, 254);
+    color: azure;
+  }
+
+
+
+  .section5{
+ 
+    margin-top: 50PX;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-around;
+    background-color:rgb(240,244,254);
+  }
+
+
+
+
+
+    .section6{
+
+        text-align: left; 
+        direction: rtl;
+        margin-top: 50PX;
+        margin-left: 50px;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+   
+    }
+
+
+
+
+    .f-container{
+      margin-top: 50px;
+      width: 100%;
+      height: 400px;
+      background-color: #00155f;
+      border-radius: 35px 35px 0 0;
+      
+      color: white;
+      }
+      
+      .f-footer{
+      
+      
+      display: flex;
+      justify-content: flex-start;
+      font-family: cursive;
+      }
+      a{
+      
+      color: white;
+      text-decoration: none;
+      
+      }
+      .footer h1{
+      
+      
+      FONT-FAMILY: system-ui;
+      font-size: 29px;
+      }
+      .how-we-are {
+      
+      margin-left: 72px;
+      margin-top: 58px;
+      padding: 10px;
+      line-height: 32px;
+      }
+      .f-custiomer-support {
+      
+      margin-left: 72px;
+      margin-top: 58px;
+      line-height: 32px;
+      }
+      .more {
+      
+      margin-left: 72px;
+      margin-top: 58px;
+      line-height: 32px;
+      }
+      .stay-know {
+      
+      margin-left: 72px;
+      margin-top: 58px;
+      line-height: 32px;
+      }
+      .f-f:hover{
+      
+      
+      border-width: 2px; 
+      border-style: solid;
+      
+      border-color: transparent transparent rgb(204, 204, 82) transparent;
+      }
+      
+      .f-ic{
+      
+      margin-left: 52px;
+      margin-top: 60px;
+      }
+      .media{
+      
+      margin-left: 250px;
+      margin-top: 24px;
+      }
+      #visa{
+      
+      color: yellow;
+      font-size: 60px;
+      margin-left: 184px;
+      }
+      .f-contain{
+      
+      display: flex;
+      }
+      .f-resreved{
+      margin-top: 10px;
+      
+      }
+
+
+      .cart-counter {
+        position: absolute;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        right: 60px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      
